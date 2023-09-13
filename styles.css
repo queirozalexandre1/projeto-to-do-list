@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Condensed', sans-serif;
+    outline: none;
+}
+
+img {
+    height: 25px;
+}
+body{
+    background: url("https://source.unsplash.com/1600x900/?landscape");
+}
+.container{
+    background-color: #d1d1d1;
+    width: 500px;
+    border-radius: 20px;
+    padding: 25px;
+    margin: 100px auto 0;
+}
+.input-task{
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+}
+.button-add-task{
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #003329;
+    color: #fff;
+    font-size: 18px;
+    padding: 0 15px;
+    float: right;
+    cursor: pointer;
+    font-weight: 500;
+}
+.button-add-task:hover{
+    opacity: 0.8;
+    font-size: 20px;
+}
+.button-add-task:active{
+    opacity: 0.6;
+}
+.list-tasks{
+    width: 100%;
+    list-style: none;
+
+}
+.task {
+    background-color: #F2F2F2;
+    -webkit-box-shadow: 6px 5px 16px 1px rgba(0,0,0,0.51);
+    -moz-box-shadow: 6px 5px 16px 1px rgba(0,0,0,0.51);
+    box-shadow: 6px 5px 16px 1px rgba(0,0,0,0.51);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    cursor: pointer;
+
+   
+}
+.task img{
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+.task:hover img{
+    opacity: 1;
+
+}
+.done {
+    background-color: #8FAC55;
+    text-decoration: line-through;
+}
